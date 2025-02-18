@@ -1,9 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  /* Opções de configuração aqui */
   compiler: {
-    styledComponents : true
+    styledComponents: true,
   }
 };
 

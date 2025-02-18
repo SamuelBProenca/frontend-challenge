@@ -17,6 +17,13 @@ const TagHeader = styled.header`
     align-items: center;
     justify-content: space-between;
     padding: 20px 160px;
+
+    > div {
+        display: flex;
+        align-tems: center;
+        justify-content: center;
+        gap: 20px;
+    }
 `
 
 const Logo = styled.a`
@@ -31,11 +38,10 @@ export function MyHeader(props : HeaderProps){
         <TagHeader>
             <Logo className={sairaStancil.className}>Capputeeno</Logo>
             <div>
-                <PrimaryInputWithSearchIcon 
-                    placeholder='Procurando por algo específico?' 
-                />
-                {/* <CartControl /> */}
+                <PrimaryInputWithSearchIcon placeholder='Procurando por algo específico?' />
+                <CartControl />
             </div>
+
         </TagHeader>
     );
 }
