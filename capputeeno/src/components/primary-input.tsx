@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { SearchIcon } from "./search-icon";
+import { SvgIcon } from "../assets/assets-icons-manager";
 import { InputHTMLAttributes } from "react";
 
 export const PrimaryInput = styled.input`
@@ -35,7 +35,8 @@ export function PrimaryInputWithSearchIcon(props: InputProps){
     return(
         <InputContainer>
             <PrimaryInput {...props}/>
-            <SearchIcon />
+            <SvgIcon name="SearchIcon" width="30" height="30" />
+
         </InputContainer>
     )
 }

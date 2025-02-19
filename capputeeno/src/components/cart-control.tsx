@@ -1,5 +1,5 @@
 import { useLocalStorage } from "@/hooks/useLocalStorage";
-import { CartIcon } from "./cart-icon";
+import { SvgIcon } from "../assets/assets-icons-manager";
 import styled from "styled-components";
 
 const CartCount = styled.span`
@@ -8,7 +8,7 @@ const CartCount = styled.span`
     height: 17px;
     width: 17px;
     position: absolute;
-    right: -10px;
+    right: -8px;
     top: 50%;
     border-radius: 50%;
     font-size: 12px;
@@ -29,7 +29,7 @@ export function CartControl() {
 
     return (
         <CartItemWithSpan>
-            <CartIcon />
+            <SvgIcon name="CartIcon" width="30" height="30" />
             {value.length > 0 && <CartCount>{value.length}</CartCount>}
         </CartItemWithSpan>
     );
