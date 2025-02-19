@@ -12,6 +12,7 @@ const CartCount = styled.span`
     top: 50%;
     border-radius: 50%;
     font-size: 12px;
+    paddig: 0 5px;
     display: flex;
     align-items: center;
     justify-content: center;
