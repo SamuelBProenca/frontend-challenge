@@ -1,3 +1,4 @@
+'use client';
 import { useLocalStorage } from "@/hooks/useLocalStorage";
 import { SvgIcon } from "../assets/assets-icons-manager";
 import styled from "styled-components";

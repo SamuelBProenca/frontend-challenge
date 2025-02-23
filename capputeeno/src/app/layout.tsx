@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 import { Saira } from "next/font/google";
 import "./globals.css";
-import { MyHeader } from "@/components/header";
-import { FilterBar } from "@/components/filter-bar"
-import { FilterContextProvider } from "@/context/filter-context"
+import { MyHeader } from "../components/header";
+import { FilterBar } from "../components/filter-bar";
+import { FilterContextProvider } from "../context/filter-context"; // Certifique-se de que este caminho está correto
 
 const saira = Saira({
-  weight: ['300', '400', '500', '600'],
-  subsets: ['latin']
-})
+  weight: ["300", "400", "500", "600"],
+  subsets: ["latin"],
+});
 
 export default function RootLayout({
   children,
@@ -18,11 +18,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${saira.className}`}>
-        <FilterContextProvider >
+        <FilterContextProvider>
           <MyHeader />
-          <FilterBar />
+          {children}
+
         </FilterContextProvider>
-        {children}
       </body>
     </html>
   );
